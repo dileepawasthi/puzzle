@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <title>Deepa Puzzle</title>
+	<script>
+	$(window).load(function(){
+		$('#game_area').puzzle_dg(140)
+	});
+	</script>
+	<style>
+@import url(http://fonts.googleapis.com/css?family=Cherry+Swash);
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color:rgba(33, 33, 33, 0.9);
+	color:#ffffff;
+	display:block;
+	position:relative; line-height:2.5em
+}
+p,h2{
+	text-align: center;}
+header h2 {
+	font-size: 2em;
+	margin: 0px auto;
+	padding: 10px 0;
+	width: 80%;
+}
+header a, a:visited {
+	text-decoration:none;
+	color:#2caae7;
+}
+body {
+	font-family: 'Cherry Swash', trebuchet ms, cursive; 
+	background:#666;
+}
+#game_area {
+	background-color: #ffffff;
+	height: 560px;
+	margin: 20px auto;
+	position: relative;
+	width: 560px; 
+	box-shadow:6px 6px 15px 0 rgba(20,20,20,.6); 
+}
+#board div {
+	background: url("img/doraemon.jpg") no-repeat scroll 0 0 #ffffff;
+	cursor: pointer;
+	height: 140px;
+	line-height: 140px;
+	position: absolute;
+	text-align: center;
+	width: 140px;
+	/* css3 shadow */
+	-moz-box-shadow: inset 0 0 20px #2caae7;
+	-webkit-box-shadow: inset 0 0 20px #2caae7;
+	-ms-box-shadow: inset 0 0 20px #2caae7;
+	-o-box-shadow: inset 0 0 20px #2caae7;
+	box-shadow: inset 0 0 20px #2caae7;
+}
+</style>
+</head>
+
+<body>
+<h1 style="text-align:center;">Game for gungun. </h1>
+    <!-- This is where the game will be included -->
+<div id="game_area"></div>
+
+<!-- java scripts --> 
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script> 
+<script src="js/puzzle.js"></script> 
+<script type="text/javascript">$(window).load(function(){
+    $('#game_area').puzzle_dg(140)
+});</script>
+</body>
+
+</html>
